@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --main-color: #033a80;
+    --bg-color: #fff;
+    --text-color: #0f0c27;
+    --hover: hsl(260, 100%, 51%);
+
+    --big-font: 3.2rem;
+    --medium-font: 1.8rem;
+    --p-font: 0.941rem;
+}
+
+body {
+    background-color: #f5ebe0 !important;
+}
+
+/* Navigation bar */
+.navbar{
+    height: 10vh;
+    
+}
+
+header.shadow{
+    box-shadow: 0 0 10px #00000073;
+}
+
+.logo img{
+    height: 8vh;
+    width: 8vh;
+    margin-left: 0vw;
+}
+
+.navbar-nav{
+    margin-left: 3vw;
+
+}
+
+.navbar a:hover {
+    color: var(--hover) !important;
+    text-shadow: 0.5px 0.5px 2px #00000073;
+}
+
+.navbar a:active {
+    color: green;
+    text-shadow: 0.5px 0.5px 2px #00000073;
+}
+
+
+/* Home Page */
+.carousel {
+    width: 85vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+/* Patents */
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 3vh 6vw 10vh 5vw;
+}
+
+.headline {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5vh;
+    align-items: center;
+    color: #00005c;
+}
+
+.headline p {
+    display: inline;
+    font-size: x-large;
+    padding-left: 0.5vw;
+    font-weight: bold;
+}
+
+.i-p,
+.n-p {
+    padding-left: 2.5vw;
+}
+
+.i-p ol,
+.n-p ol {
+    display: block;
+    padding-left: 2.5vw;
+    list-style: decimal;
+}
+
+.status {
+    display: block;
+    margin-top: 1vh;
+    font-weight: 600;
+}
+
+.i-p ol li,
+.n-p ol li {
+    padding-top: 2vh;
+}
+
+/* Publication */
+.underline {
+    text-decoration: underline;
+}
+
+.link {
+    color: blue;
+}
+
+.ch-link {
+    padding: 1.5vh 0 0 4vh;
+}
+
+/* Contact US */
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    /* color: ; */
+}
+
+.contact .content p {
+    font-weight: 400;
+    /* color: ; */
+}
+
+.container-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container-form .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-form .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container-form .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #dba39a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container-form .contactInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    /* color: ; */
+    flex-direction: column;
+    font-weight: 400;
+}
+
+.container-form .contactInfo .box .text h3 {
+    font-weight: 500;
+    /* color: #00bcd4; */
+}
+
+.contactForm {
+    width: 40%;
+    padding: 40px;
+    background-color: #dba39a;
+}
+
+.contactForm h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#submit {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactForm .inputBox input:focus~span,
+.contactForm .inputBox input:valid~span,
+.contactForm .inputBox textarea:focus~span,
+.contactForm .inputBox textarea:valid~span {
+    color: #2b3a55;
+    font-size: 12px;
+    transform: translateY(-21px);
+}
+
+.contactForm .inputBox input[type="submit"] {
+    width: 100px;
+    background: #2b3a55;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+a:active {
+    color: var(--hover);
+    text-shadow: 0.5px 0.5px 2px #00000073;
+}
+
+/* Comming-Soon */
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -100;
+    opacity: 0.4;
+}
+
+.container-temp {
+    color: #3e2723;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#h1 {
+    font-size: 80px;
+    margin-bottom: 10vh;
+    margin-top: 20vh;
+}
+
+#h3 {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 360px;
+    height: 12px;
+    background-color: #d1d1d1;
+    margin: auto;
+    margin-bottom: 100px;
+    opacity: 0.8;
+    position: relative;
+}
+
+.progress-bar::before {
+    content: "0%";
+    position: absolute;
+    left: 0;
+    font-size: 12px;
+    bottom: -18px;
+}
+
+.progress-bar::after {
+    content: "100%";
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    bottom: -18px;
+}
+
+.progress-bar span {
+    display: block;
+    width: 80%;
+    height: 12px;
+    background-color: #177eed;
+    animation: fill 1s ease-in 1;
+}
+
+@keyframes fill {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 80%;
+    }
+}
+
+.sm a {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: #87b1de;
+    line-height: 60px;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 50%;
+    margin: 0 10px;
+    opacity: 0.7;
+    transition: 0.3s linear;
+}
+
+.sm a:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/*Research Group*/
+.right-img {
+    width: 20%;
+    height: 20%;
+    box-shadow: 0 0 8px;
+    float: left;
+    margin-right: 2vw;
+}
+
+.right {
+    margin-top: 7%;
+    background-color: #eddbc7;
+    font-family: "Roboto", sans-serif;
+    padding: 3%;
+}
+
+.right-text {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+}
+
+.left-img {
+    width: 20%;
+    height: 20%;
+    box-shadow: 0 0 8px;
+    float: right;
+    margin-left: 2vw;
+}
+
+.left {
+    background-color: #eddbc7;
+    margin-top: 7%;
+    font-family: "Roboto", sans-serif;
+    padding: 3%;
+}
+
+.left-text {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+}
+
+.team {
+    text-align: center;
+    margin-top: 8vh;
+    margin-bottom: -15vh;
+}
