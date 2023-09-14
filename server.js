@@ -1,4 +1,4 @@
-require('dotenv');
+require('dotenv/config');
 const express = require('express')
 const bodyParser = require('body-parser')
 const request = require('request')
@@ -6,7 +6,7 @@ const nodemailer = require('nodemailer')
 const SMTPTransport = require('nodemailer/lib/smtp-transport')
 
 const app = express()
-const port = 3000
+const port = process.env["PORT"]
 
 // Set public folder as static folder for static files
 app.use(express.static(__dirname + '/public'));
